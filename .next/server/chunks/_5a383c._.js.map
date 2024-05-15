@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sections": [
+    {"offset": {"line": 82, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/src/app/(hydrogen)/layout.tsx/proxy.js"],"sourcesContent":["import { registerClientReference } from \"react-server-dom-turbopack/server.edge\";\nexport default registerClientReference(\n    function() { throw new Error(\"Attempted to call the default export of [project]/src/app/(hydrogen)/layout.tsx from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.\"); },\n    \"[project]/src/app/(hydrogen)/layout.tsx\",\n    \"default\",\n);\n"],"names":[],"mappings":";;;;;;uCACe,gYACX;IAAa,MAAM,IAAI,MAAM;AAA6Q,GAC1S,2CACA"}},
+    {"offset": {"line": 91, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 121, "column": 0}, "map": {"version":3,"sources":["/turbopack/[project]/.next-internal/server/app/(hydrogen)/page/actions.js"],"sourcesContent":["__turbopack_export_value__({\n});"],"names":[],"mappings":"AAAA,2BAA2B,CAC3B"}},
+    {"offset": {"line": 122, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

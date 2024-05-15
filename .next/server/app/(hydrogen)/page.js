@@ -1,0 +1,12 @@
+const CHUNK_PUBLIC_PATH = "server/app/(hydrogen)/page.js";
+const runtime = require("../../chunks/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/e667e_next_c9f7ef._.js");
+runtime.loadChunk("server/chunks/e63db_next-auth_a730e9._.js");
+runtime.loadChunk("server/chunks/54db0_openid-client_bb9797._.js");
+runtime.loadChunk("server/chunks/01daf_jose_dist_node_cjs_12d3da._.js");
+runtime.loadChunk("server/chunks/939f1_react-icons_pi_index_mjs_01126e._.js");
+runtime.loadChunk("server/chunks/939f1_react-icons_lib_c409d3._.js");
+runtime.loadChunk("server/chunks/node_modules__pnpm_d8547f._.js");
+runtime.loadChunk("server/chunks/_36aeb4._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/(hydrogen)/page/actions.js (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/.pnpm/next@14.1.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/build/templates/app-page.js/(COMPONENT_0)/[project]/src/app/layout.tsx [app-rsc] (ecmascript, Next.js server component)/(COMPONENT_1)/[project]/src/app/not-found.tsx [app-rsc] (ecmascript, Next.js server component)/(COMPONENT_2)/[project]/src/app/(hydrogen)/layout.tsx [app-rsc] (ecmascript, Next.js server component)/(COMPONENT_3)/[project]/src/app/(hydrogen)/page.tsx [app-rsc] (ecmascript, Next.js server component) (ecmascript) {facade}", CHUNK_PUBLIC_PATH).exports;
