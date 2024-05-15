@@ -1,17 +1,324 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["static/chunks/_0a06f0._.js", {
 
-"[project]/src/components/ui/pagination.tsx [app-client] (ecmascript)": (function({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports, t: require }) { !function() {
+"[project]/src/components/ui/pagination.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
 
-const e = new Error("Could not parse module '[project]/src/components/ui/pagination.tsx'");
-e.code = 'MODULE_UNPARSEABLE';
-throw e;
-}.call(this) }),
-"[project]/src/components/controlled-table/table-pagination.tsx [app-client] (ecmascript)": (function({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports, t: require }) { !function() {
+__turbopack_esm__({
+    "default": ()=>Pagination,
+    "localeDefault": ()=>localeDefault
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/.pnpm/next@14.1.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$rc$2d$pagination$40$4$2e$0$2e$4_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$rc$2d$pagination$2f$es$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$7b$module__evaluation$7d$__ = __turbopack_import__("[project]/node_modules/.pnpm/rc-pagination@4.0.4_react-dom@18.2.0_react@18.2.0/node_modules/rc-pagination/es/index.js [app-client] (ecmascript) {module evaluation}");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$rc$2d$pagination$40$4$2e$0$2e$4_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$rc$2d$pagination$2f$es$2f$Pagination$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/.pnpm/rc-pagination@4.0.4_react-dom@18.2.0_react@18.2.0/node_modules/rc-pagination/es/Pagination.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/utils/class-names.ts [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+'use client';
+;
+;
+;
+;
+const classes = {
+    base: {
+        item: '[&>.rc-pagination-item>a]:text-gray-700 [&>.rc-pagination-item>a]:font-medium [&>li.rc-pagination-item]:border-muted [&>.rc-pagination-item>a]:hover:text-gray-900 [&>.rc-pagination-item>a]:focus:text-gray-700 [&>.rc-pagination-item:not(.rc-pagination-item-active)]:bg-transparent',
+        icon: '[&>.rc-pagination-prev]:align-baseline [&>.rc-pagination-next]:align-baseline',
+        outline: '[&>.rc-pagination-item]:leading-7 [&>.rc-pagination-item]:border-0',
+        jumperDiv: '[&>.rc-pagination-options>.rc-pagination-options-quick-jumper]:text-sm [&>.rc-pagination-options>.rc-pagination-options-quick-jumper]:text-gray-500',
+        jumperInput: '[&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:!py-[3px] [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:text-sm [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:border-muted [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:ring-0'
+    },
+    rounded: {
+        none: '[&>.rc-pagination-item]:rounded-none [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:rounded-none',
+        sm: '[&>.rc-pagination-item]:rounded-sm [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:rounded-sm',
+        md: '[&>.rc-pagination-item]:rounded-md [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:rounded-md',
+        lg: '[&>.rc-pagination-item]:rounded-lg [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:rounded-lg',
+        full: '[&>.rc-pagination-item]:rounded-full [&>.rc-pagination-options>.rc-pagination-options-quick-jumper>input]:rounded-full'
+    },
+    variant: {
+        solid: {
+            base: '[&>.rc-pagination-item-active>a]:!text-primary-foreground [&>.rc-pagination-item-active>a]:hover:text-primary-foreground',
+            color: {
+                primary: '[&>.rc-pagination-item-active]:bg-primary  [&>li.rc-pagination-item-active]:border-primary [&>.rc-pagination-item-active]:hover:border-primary [&>.rc-pagination-item-active]:focus:border-primary',
+                secondary: '[&>.rc-pagination-item-active]:bg-secondary [&>li.rc-pagination-item-active]:border-secondary [&>.rc-pagination-item-active]:hover:border-secondary [&>.rc-pagination-item-active]:focus:border-secondary',
+                danger: '[&>.rc-pagination-item-active]:bg-red [&>li.rc-pagination-item-active]:border-red [&>.rc-pagination-item-active]:hover:border-red [&>.rc-pagination-item-active]:focus:border-red',
+                info: '[&>.rc-pagination-item-active]:bg-blue [&>li.rc-pagination-item-active]:border-blue [&>.rc-pagination-item-active]:hover:border-blue [&>.rc-pagination-item-active]:focus:border-blue',
+                success: '[&>.rc-pagination-item-active]:bg-green [&>li.rc-pagination-item-active]:border-green [&>.rc-pagination-item-active]:hover:border-green [&>.rc-pagination-item-active]:focus:border-green',
+                warning: '[&>.rc-pagination-item-active]:bg-orange [&>li.rc-pagination-item-active]:border-orange [&>.rc-pagination-item-active]:hover:border-orange [&>.rc-pagination-item-active]:focus:border-orange'
+            }
+        },
+        flat: {
+            base: '',
+            color: {
+                primary: '[&>.rc-pagination-item-active]:bg-primary-lighter [&>li.rc-pagination-item-active]:border-primary-lighter [&>.rc-pagination-item-active>a]:text-primary-dark [&>.rc-pagination-item-active>a]:hover:text-primary-dark [&>.rc-pagination-item-active>a]:focus:text-primary-dark [&>.rc-pagination-item-active]:hover:border-primary-lighter [&>.rc-pagination-item-active]:focus:border-primary-lighter',
+                secondary: '[&>.rc-pagination-item-active]:bg-secondary-lighter [&>li.rc-pagination-item-active]:border-secondary-lighter [&>.rc-pagination-item-active>a]:text-secondary-dark [&>.rc-pagination-item-active>a]:hover:text-secondary-dark [&>.rc-pagination-item-active>a]:focus:text-secondary-dark [&>.rc-pagination-item-active]:hover:border-secondary-lighter [&>.rc-pagination-item-active]:focus:border-secondary-lighter',
+                danger: '[&>.rc-pagination-item-active]:bg-red-lighter [&>li.rc-pagination-item-active]:border-red-lighter [&>.rc-pagination-item-active>a]:text-red-dark [&>.rc-pagination-item-active>a]:hover:text-red-dark [&>.rc-pagination-item-active>a]:focus:text-red-dark [&>.rc-pagination-item-active]:hover:border-red-lighter [&>.rc-pagination-item-active]:focus:border-red-lighter',
+                info: '[&>.rc-pagination-item-active]:bg-blue-lighter [&>li.rc-pagination-item-active]:border-blue-lighter [&>.rc-pagination-item-active>a]:text-blue-dark [&>.rc-pagination-item-active>a]:hover:text-blue-dark [&>.rc-pagination-item-active>a]:focus:text-blue-dark [&>.rc-pagination-item-active]:hover:border-blue-lighter [&>.rc-pagination-item-active]:focus:border-blue-lighter',
+                success: '[&>.rc-pagination-item-active]:bg-green-lighter [&>li.rc-pagination-item-active]:border-green-lighter [&>.rc-pagination-item-active>a]:text-green-dark [&>.rc-pagination-item-active>a]:hover:text-green-dark [&>.rc-pagination-item-active>a]:focus:text-green-dark [&>.rc-pagination-item-active]:hover:border-green-lighter [&>.rc-pagination-item-active]:focus:border-green-lighter',
+                warning: '[&>.rc-pagination-item-active]:bg-orange-lighter [&>li.rc-pagination-item-active]:border-orange-lighter [&>.rc-pagination-item-active>a]:text-orange-dark [&>.rc-pagination-item-active>a]:hover:text-orange-dark [&>.rc-pagination-item-active>a]:focus:text-orange-dark [&>.rc-pagination-item-active]:hover:border-orange-lighter [&>.rc-pagination-item-active]:focus:border-orange-lighter'
+            }
+        }
+    }
+};
+const iconClasses = {
+    base: 'text-gray-500',
+    outline: 'border border-muted p-[5px]',
+    center: 'inline-block align-middle',
+    rounded: {
+        none: 'rounded-none',
+        sm: 'rounded-sm',
+        md: 'rounded-md',
+        lg: 'rounded-lg',
+        full: 'rounded-full'
+    }
+};
+const PrevIcon = ({ icon, rounded, outline, className })=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](iconClasses.base, outline ? iconClasses.outline : iconClasses.center, iconClasses.rounded[rounded], className),
+        children: icon || /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            strokeWidth: 2,
+            stroke: "currentColor",
+            className: "m-auto h-4 w-4 rtl:-rotate-180",
+            children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("path", {
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                d: "M15.75 19.5L8.25 12l7.5-7.5"
+            }, void 0, false, {
+                fileName: "<[project]/src/components/ui/pagination.tsx>",
+                lineNumber: 101,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "<[project]/src/components/ui/pagination.tsx>",
+            lineNumber: 93,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/src/components/ui/pagination.tsx>",
+        lineNumber: 84,
+        columnNumber: 3
+    }, this);
+_c = PrevIcon;
+const NextIcon = ({ icon, rounded, outline, className })=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](iconClasses.base, outline ? iconClasses.outline : iconClasses.center, iconClasses.rounded[rounded], className),
+        children: icon || /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            strokeWidth: 2,
+            stroke: "currentColor",
+            className: "m-auto h-4 w-4 rtl:rotate-180",
+            children: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("path", {
+                strokeLinecap: "round",
+                strokeLinejoin: "round",
+                d: "M8.25 4.5l7.5 7.5-7.5 7.5"
+            }, void 0, false, {
+                fileName: "<[project]/src/components/ui/pagination.tsx>",
+                lineNumber: 129,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "<[project]/src/components/ui/pagination.tsx>",
+            lineNumber: 121,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/src/components/ui/pagination.tsx>",
+        lineNumber: 112,
+        columnNumber: 3
+    }, this);
+_c1 = NextIcon;
+const JumpPrevIcon = ({ icon, rounded, outline, className })=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](iconClasses.base, outline ? iconClasses.outline : iconClasses.center, iconClasses.rounded[rounded], !icon && outline && 'py-0 leading-[26px]', className),
+        children: icon || '•••'
+    }, void 0, false, {
+        fileName: "<[project]/src/components/ui/pagination.tsx>",
+        lineNumber: 140,
+        columnNumber: 3
+    }, this);
+_c2 = JumpPrevIcon;
+const JumpNextIcon = ({ icon, rounded, outline, className })=>/*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](iconClasses.base, outline ? iconClasses.outline : iconClasses.center, iconClasses.rounded[rounded], !icon && outline && 'py-0 leading-[26px]', className),
+        children: icon || '•••'
+    }, void 0, false, {
+        fileName: "<[project]/src/components/ui/pagination.tsx>",
+        lineNumber: 154,
+        columnNumber: 3
+    }, this);
+_c3 = JumpNextIcon;
+const localeDefault = {
+    items_per_page: '/ page',
+    jump_to: 'Go to',
+    jump_to_confirm: 'confirm',
+    page: 'Page',
+    prev_page: 'Previous Page',
+    next_page: 'Next Page',
+    prev_5: 'Previous 5 Pages',
+    next_5: 'Next 5 Pages',
+    prev_3: 'Previous 3 Pages',
+    next_3: 'Next 3 Pages',
+    page_size: 'Page Size'
+};
+function Pagination({ outline = false, rounded = 'md', variant = 'solid', color = 'primary', locale, nextIcon, prevIcon, prevIconClassName, nextIconClassName, jumpPrevIcon, jumpNextIcon, jumpPrevIconClassName, jumpNextIconClassName, className, ...props }) {
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$rc$2d$pagination$40$4$2e$0$2e$4_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$rc$2d$pagination$2f$es$2f$Pagination$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        locale: locale || localeDefault,
+        nextIcon: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](NextIcon, {
+            icon: nextIcon,
+            rounded: rounded,
+            outline: outline,
+            className: nextIconClassName
+        }, void 0, false, {
+            fileName: "<[project]/src/components/ui/pagination.tsx>",
+            lineNumber: 225,
+            columnNumber: 9
+        }, void 0),
+        prevIcon: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](PrevIcon, {
+            icon: prevIcon,
+            rounded: rounded,
+            outline: outline,
+            className: prevIconClassName
+        }, void 0, false, {
+            fileName: "<[project]/src/components/ui/pagination.tsx>",
+            lineNumber: 233,
+            columnNumber: 9
+        }, void 0),
+        jumpPrevIcon: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](JumpPrevIcon, {
+            icon: jumpPrevIcon,
+            rounded: rounded,
+            outline: outline,
+            className: jumpPrevIconClassName
+        }, void 0, false, {
+            fileName: "<[project]/src/components/ui/pagination.tsx>",
+            lineNumber: 241,
+            columnNumber: 9
+        }, void 0),
+        jumpNextIcon: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](JumpNextIcon, {
+            icon: jumpNextIcon,
+            rounded: rounded,
+            outline: outline,
+            className: jumpNextIconClassName
+        }, void 0, false, {
+            fileName: "<[project]/src/components/ui/pagination.tsx>",
+            lineNumber: 249,
+            columnNumber: 9
+        }, void 0),
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"](classes.base.item, classes.base.jumperDiv, classes.base.jumperInput, !outline && classes.base.outline, !outline && classes.base.icon, classes.rounded[rounded], classes.variant[variant].base, classes.variant[variant].color[color], className),
+        ...props
+    }, void 0, false, {
+        fileName: "<[project]/src/components/ui/pagination.tsx>",
+        lineNumber: 222,
+        columnNumber: 5
+    }, this);
+}
+_c4 = Pagination;
+Pagination.displayName = 'Pagination';
+var _c, _c1, _c2, _c3, _c4;
+__turbopack_refresh__.register(_c, "PrevIcon");
+__turbopack_refresh__.register(_c1, "NextIcon");
+__turbopack_refresh__.register(_c2, "JumpPrevIcon");
+__turbopack_refresh__.register(_c3, "JumpNextIcon");
+__turbopack_refresh__.register(_c4, "Pagination");
 
-const e = new Error("Could not parse module '[project]/src/components/controlled-table/table-pagination.tsx'");
-e.code = 'MODULE_UNPARSEABLE';
-throw e;
-}.call(this) }),
+})()),
+"[project]/src/components/controlled-table/table-pagination.tsx [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
+"use strict";
+
+__turbopack_esm__({
+    "default": ()=>TablePagination
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/.pnpm/next@14.1.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$0$2e$1_react$40$18$2e$2$2e$0$2f$node_modules$2f$react$2d$icons$2f$pi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/.pnpm/react-icons@5.0.1_react@18.2.0/node_modules/react-icons/pi/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/components/ui/pagination.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$rizzui$40$0$2e$8$2e$4_$40$floating$2d$ui$2b$react$40$0$2e$26$2e$11_$40$headlessui$2b$react$40$1$2e$7$2e$18_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$rizzui$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$7b$locals$7d$__ = __turbopack_import__("[project]/node_modules/.pnpm/rizzui@0.8.4_@floating-ui+react@0.26.11_@headlessui+react@1.7.18_react-dom@18.2.0_react@18.2.0/node_modules/rizzui/dist/index.mjs [app-client] (ecmascript) {locals}");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/utils/class-names.ts [app-client] (ecmascript)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+;
+;
+;
+;
+const paginationLimitOptions = [
+    5,
+    10,
+    15,
+    20,
+    25
+].map((v, idx)=>({
+        id: idx,
+        label: String(v),
+        value: v
+    }));
+function TablePagination({ pageSize, setPageSize, total, paginatorClassName = 'mt-5 xs:mt-6 sm:mt-7', ...props }) {
+    return /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$utils$2f$class$2d$names$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"]('table-pagination flex items-center justify-center sm:justify-between', paginatorClassName),
+        children: [
+            !setPageSize ? total && /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                className: "hidden text-gray-500 sm:inline-flex",
+                children: [
+                    props.current,
+                    " of ",
+                    Math.ceil(total / pageSize),
+                    " pages"
+                ]
+            }, void 0, true, {
+                fileName: "<[project]/src/components/controlled-table/table-pagination.tsx>",
+                lineNumber: 34,
+                columnNumber: 11
+            }, this) : /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"]("div", {
+                className: "hidden items-center sm:flex",
+                children: [
+                    "Rows per page:",
+                    ' ',
+                    /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$rizzui$40$0$2e$8$2e$4_$40$floating$2d$ui$2b$react$40$0$2e$26$2e$11_$40$headlessui$2b$react$40$1$2e$7$2e$18_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$rizzui$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$7b$locals$7d$__["Select"], {
+                        options: paginationLimitOptions,
+                        onChange: setPageSize,
+                        size: "sm",
+                        variant: "flat",
+                        value: pageSize,
+                        getOptionValue: ({ value })=>value,
+                        suffix: /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$react$2d$icons$40$5$2e$0$2e$1_react$40$18$2e$2$2e$0$2f$node_modules$2f$react$2d$icons$2f$pi$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PiCaretDownBold"], {}, void 0, false, {
+                            fileName: "<[project]/src/components/controlled-table/table-pagination.tsx>",
+                            lineNumber: 48,
+                            columnNumber: 21
+                        }, void 0),
+                        dropdownClassName: "!p-1.5 border w-12 border-gray-100 !z-10 shadow-lg dropdownClassName",
+                        className: "ms-1 w-auto [&_button]:font-medium",
+                        optionClassName: "px-1"
+                    }, void 0, false, {
+                        fileName: "<[project]/src/components/controlled-table/table-pagination.tsx>",
+                        lineNumber: 41,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "<[project]/src/components/controlled-table/table-pagination.tsx>",
+                lineNumber: 39,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$14$2e$1$2e$3_react$2d$dom$40$18$2e$2$2e$0_react$40$18$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$pagination$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                total: total,
+                pageSize: pageSize,
+                defaultCurrent: 1,
+                showLessItems: true,
+                prevIconClassName: "py-0 text-gray-500 !leading-[26px]",
+                nextIconClassName: "py-0 text-gray-500 !leading-[26px]",
+                ...props
+            }, void 0, false, {
+                fileName: "<[project]/src/components/controlled-table/table-pagination.tsx>",
+                lineNumber: 55,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "<[project]/src/components/controlled-table/table-pagination.tsx>",
+        lineNumber: 26,
+        columnNumber: 5
+    }, this);
+}
+_c = TablePagination;
+var _c;
+__turbopack_refresh__.register(_c, "TablePagination");
+
+})()),
 "[project]/node_modules/.pnpm/rc-util@5.39.1_react-dom@18.2.0_react@18.2.0/node_modules/rc-util/es/KeyCode.js [app-client] (ecmascript)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, p: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, g: global, __dirname, k: __turbopack_refresh__ }) => (() => {
 "use strict";
 

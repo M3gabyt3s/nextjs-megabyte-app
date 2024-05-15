@@ -1,13 +1,12 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
-    "static/chunks/src_components_controlled-table_table-pagination_tsx_ee67c2._.js",
+    "static/chunks/src_components_controlled-table_table-pagination_tsx_b93b2c._.js",
     {},
 ]);
 (globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
-  "path": "static/chunks/src_components_controlled-table_table-pagination_tsx_ee67c2._.js",
+  "path": "static/chunks/src_components_controlled-table_table-pagination_tsx_b93b2c._.js",
   "chunks": [
-    "static/chunks/939f1_react-icons_pi_index_mjs_01ad9e._.js",
-    "static/chunks/939f1_react-icons_lib_38a039._.js",
-    "static/chunks/src_components_controlled-table_table-pagination_tsx_1612eb._.js"
+    "static/chunks/_0a06f0._.js",
+    "static/chunks/d694a_rc-pagination_assets_index_f1ae4b.css"
   ],
   "source": "dynamic"
 });
