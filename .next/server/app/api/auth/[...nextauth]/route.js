@@ -1,0 +1,11 @@
+const CHUNK_PUBLIC_PATH = "server/app/api/auth/[...nextauth]/route.js";
+const runtime = require("../../../../chunks/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/e667e_next_727a74._.js");
+runtime.loadChunk("server/chunks/e63db_next-auth_d756dc._.js");
+runtime.loadChunk("server/chunks/54db0_openid-client_bb9797._.js");
+runtime.loadChunk("server/chunks/01daf_jose_dist_node_cjs_12d3da._.js");
+runtime.loadChunk("server/chunks/88356_zod_lib_index_mjs_38f39b._.js");
+runtime.loadChunk("server/chunks/node_modules__pnpm_93eb0a._.js");
+runtime.loadChunk("server/chunks/_4fc6c5._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/.next-internal/server/app/api/auth/[...nextauth]/route/actions.js (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/.pnpm/next@14.1.3_react-dom@18.2.0_react@18.2.0/node_modules/next/dist/esm/build/templates/app-route.js/(INNER_APP_ROUTE)/[project]/src/app/api/auth/[...nextauth]/route.ts [app-rsc] (ecmascript) (ecmascript)", CHUNK_PUBLIC_PATH).exports;
