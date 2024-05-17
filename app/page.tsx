@@ -2,112 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div >
+      <h1>The iframe sandbox attribute</h1>
+      <iframe width={"100%"} height={"1000"} src="https://web.signinghub.com/Integration?q=QUVTMjU2LUdDTR2qjhM28Qd4XKiTBZXtMtP-2B-TJl-2F-zva21dJgWR-2B-WA4gNAzQ2KxYl7FNL1dzmJD622lJUy0bYRcQdUf43mFMwPcjiJK9kgt5d5V1o9e4z61YRsWtyuVKL-2F-bOS1J5sTKoNejuBA2BWXAApnYb8wYDRU8wZNLBzQQH-2F-S95QOalQqxJOGteW9XaftEUPck9BsyT18uQA3f3TOG24sSVVGcRyQC9wviSpHE7qRA2LhSPmNxNH-2B-Opjeq4KQlh1sA1WCscR1Q4EndUL7L6Yjt8W7qyko5T2DP1xt3K8RJsO8yEf71mfQwfEF3qcXUKORJBVf-2F-75youqSLL3K0dYWoyWyJzZZEzYi98xdDoaCiYbp82YTEmVGkp9p7GgMqdTJBfLPCIPepbvraFFw45SuwyF5xYxKMerqeXektZm1G-2F-ReMT1P8bFln1H0-2F-mLMLrcuPlaX4lfkxW6cBlqa-2B-0tc53jX5T5IL6BS33gAkd4by3KdbobcxS-2F-qNgEEwQIDF5iJ6SAMOkxPubp-2F-y-2B-zaYqLZuTq6VQ-2F-vLOw4CSqE4k6Kc4IuGhp6NrDrk8Ucwz6iCSRdCWycYyP2Qwu1nStcK4BwWCbait1Fd4AeKXGOfzAhMJKp9cLQnt-2F-EZIRGT2cdJQcUoT0rCg43TK-2F-M8H1SxwjXmA0QRkkFs18hvyVqmXN1RNACUlmfP2rBJCA3LnSaZpFxsuJigUZwb9j-2B-DH9n-2B-NNSUVD5MQl5mONBSC0uUz7ttbrTxnm5TWxYirTNS0oolLwdfDwktoc63QBbVu54XNzgDseJJjdedo8kB3UZWXSkDoUC-2F-zuat2j8Vcbt0AgLDa63xz39etUSgArZz4Hn854CKf1MCg8-2B-Dt95hIaWoLsnlWu7fNtk0-2B-80An3kl9diqhHtwZOgA2mPMa5mS-2F-wA9P23fRjzgT6K8DlzQWNrsvnUwLCGeNZlU0bl7HRl8gnS-2F-u8BRacb8H-2B-WsNjtrf43RWN2PpVqVIswF42Ea1cjAjZZM8MvECOkF2z7uX-2F-ifkjerH33bPEtXlPiaLcf471lJN3QTHep4lnPDzJ1Q4LctxabpaFQS7tn2bB3Ei3fGRFcJgH6JMuQcJycHEWidJ-2B-8gSPTJpQyhKZL6-2F-esjZXroRCJlQjS7N-2B-ygbIeO3VhN3WqqaVSEUmG3WP3nvIr0W-2B-7pwE-2F-w-3D--3D-">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+    </div>
   );
 }
